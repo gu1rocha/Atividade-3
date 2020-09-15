@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bootstrap</title>
+		<link rel="stylesheet" href="css/bootstrap.css" />
+	</head>
+	<body>
+		<div class="container">
+			<h1>Formulário</h1>
+			<form class="row">
+				<div class="col-3">
+					<label>Nome:</label>
+					<input type="text" id="Nome" name="Nome" class="form-control" />
+				</div>
+				<div class="col-3">
+					<label>Data de nascimento:</label>
+					<input type="date" id="DataNascimento" name="DataNascimento" class="form-control" />
+				</div>
+				<div class="col-2">
+					<label>Ano que cursa:</label>
+					<input type="text" id="Ano" name="Ano" class="form-control" />
+				</div>
+				<div class="col-2">
+					<label>Matéria Preferida:</label>
+					<input type="text" id="MateriaPreferida" name="MateriaPreferida" class="form-control" />
+				</div>
+				<div class="col-2">
+					<button id="AddDados" onclick="Formulario()" class="btn btn-primary" style="margin-top: 30px;">Salvar</button>
+				</div>
+			</form>
+			<br/>
+			<table class="table table-striped">
+				<colgroup>
+					<col width="150">
+					<col width="100">
+					<col width="100">
+					<col width="100">
+					<col width="100">
+					<col width="100">
+				</colgroup>
+				<thead>
+					<tr>
+						<th>Nome</th>
+						<th>Data de nascimento</th>
+						<th>Ano que cursa</th>
+						<th>Matéria</th>
+						<th>Editar</th>
+						<th>Excluir</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>João</td>
+						<td>2006-08-27</td>
+						<td>8</td>
+						<td>Geografia</td>
+						<td>
+							<button class="btn btn-warning">Editar</button>
+						</td>
+						<td>
+							<button class="btn btn-danger">Excluir</button>
+						</td>
+					</tr>
+					<tr>
+						<td>Ana</td>
+						<td>2006-09-25</td>
+						<td>8</td>
+						<td>Artes</td>
+						<td>
+							<button class="btn btn-warning">Editar</button>
+						</td>
+						<td>
+							<button class="btn btn-danger">Excluir</button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</body>
+</html>
